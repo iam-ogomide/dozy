@@ -30,8 +30,10 @@
 }
 .hometextcontainer{
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 .smalltext{
     /* font-size: 3rem; */
