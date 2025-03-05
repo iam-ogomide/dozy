@@ -65,5 +65,93 @@
         </div>
     </div>
 
-    
+
+    <!-- MINI News  -->
+    <div class="container mt-5 mb-3">
+        <div class="row">
+
+            <div class="col-lg-6 col-12 mt-5 joltImg" data-aos="zoom-in" data-aos-easing="ease-in-out">
+                <img src="../../assets/h2.jpg" alt="" >
+                <h4 style="font-size: 1rem; margin: 15px 0px; ">An African Tech Entrepreneur Changing the Face of Agriculture</h4> 
+                <p class="smalltext" style="width: 100%; line-height: 2rem;">March 3rd, 2025.</p>
+                <div class="explore-btn">
+                    <a href="#" class="exp">Read More</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-12 mt-5" style="align-content: center;" data-aos="fade-up" data-aos-easing="ease-in-out">
+                <div class="side-news" style="height: 100%; align-items: center; justify-content: space-around;">
+                    <div class="news-item">
+                        <img src="../../assets/h2.jpg" alt="News 1">
+                        <div class="news-text">
+                            <h4>My Keynote Address at the Cameroon Economic Meeting</h4>
+                            <p>February 27, 2025</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="../../assets/h2.jpg" alt="News 2">
+                        <div class="news-text">
+                            <h4>Heirs Energies Leadership Forum 2025: Public and Private Sector Leaders Unite</h4>
+                            <p>February 24, 2025</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="../../assets/h2.jpg" alt="News 3">
+                        <div class="news-text">
+                            <h4>From Dubai to Ethiopia: Forging Partnership, Promoting Peace</h4>
+                            <p>February 17, 2025</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="../../assets/h2.jpg" alt="News 4">
+                        <div class="news-text">
+                            <h4>Tony Elumelu Foundation Partners with UAE Office of Development Affairs</h4>
+                            <p>February 12, 2025</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="../../assets/h2.jpg" alt="News 4">
+                        <div class="news-text">
+                            <h4>Tony Elumelu Foundation Partners with UAE Office of Development Affairs</h4>
+                            <p>February 12, 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+    <!-- Mini gallery -->
+    <div class="container py-5" id="service">
+  <!-- manage text -->
+  <div class="text-center mb-5">
+    <h1 class="display-6 fw-semibold mb-4">
+      Manage your entire community in a single system
+    </h1>
+    <p class="text-muted lead">Who is Nextcent suitable for?</p>
+  </div>
+
+  <!-- manage card -->
+  <div class="row g-4 justify-content-center">
+    <div *ngFor="let pack of packages" class="col-md-4 col-lg-4">
+      <div class="card h-100 text-center border-0 shadow-sm">
+        <div class="card-body">
+          <img 
+            [src]="pack.green" 
+            alt="{{ pack.name }}" 
+            class="img-fluid mx-auto d-block mb-3"
+          >
+          <h5 class="card-title text-primary fw-bold">{{ pack.name }}</h5>
+          <p class="card-text text-muted">{{ pack.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+
+
 </div>

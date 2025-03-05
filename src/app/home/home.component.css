@@ -108,9 +108,44 @@
     letter-spacing: 6px;
 }
 
+.side-news {
+    flex: 1;
+}
+.side-news .news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.side-news img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.news-text {
+    flex: 1;
+}
+.news-text h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+.news-text p {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
 
 
 
+.card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
 
 
 @media screen and (max-width: 600px) {
@@ -160,3 +195,6 @@
        
     }
 }
+
+
+
