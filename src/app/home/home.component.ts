@@ -52,6 +52,9 @@ export class HomeComponent implements OnInit {
     { name: 'Membership Organisations', description: 'Our membership management software provides full automation of membership renewals and payments', green: 'assets/ab1.png' },
     { name: 'National Associations', description: 'Our membership management software provides full automation of membership renewals and payments', green: 'assets/ab2.png' },
     { name: 'Clubs And Groups', description: 'Our membership management software provides full automation of membership renewals and payments', green: 'assets/ab3.png' },
+    { name: 'Membership Organisations', description: 'Our membership management software provides full automation of membership renewals and payments', green: 'assets/ab1.png' },
+    { name: 'National Associations', description: 'Our membership management software provides full automation of membership renewals and payments', green: 'assets/ab2.png' },
+    { name: 'Clubs And Groups', description: 'Our membership management software provides full automation of membership renewals and payments', green: 'assets/ab3.png' },
   ];
 
 }
