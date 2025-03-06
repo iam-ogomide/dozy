@@ -84,8 +84,8 @@
                 <h4 style="font-size: 1rem; margin: 15px 0px; ">An African Tech Entrepreneur Changing the Face of
                     Agriculture</h4>
                 <p class="smalltext" style="width: 100%; line-height: 2rem;">March 3rd, 2025.</p>
-                <div class="explore-btn">
-                    <a href="#" class="exp">Read More</a>
+                <div class="explore-btn" >
+                    <a href="#" class="exp" routerLink="/blog">Read More</a>
                 </div>
             </div>
 
@@ -149,7 +149,7 @@
         <div class="row g-4 justify-content-center">
             <div *ngFor="let pack of packages" class="col-md-4 col-lg-4">
                 <!-- Card with just the image -->
-                <div class="card text-center border-0 shadow-sm" style="height: 50%;">
+                <div class="card text-center border-0 shadow-sm" style="height: 50vh;">
                     <!-- Image takes full width and height of card -->
                     <img [src]="pack.green" alt="" class="img-fluid w-100 h-100 object-fit-cover" >
                 </div>
@@ -161,6 +161,9 @@
                     <p class="text-muted">{{ pack.description }}</p>
                 </div>
             </div>
+        </div>
+        <div class="explore-btn" style="align-items: center; justify-content: center; display: flex;">
+            <a href="#" class="exp" routerLink="/gallery">View More</a>
         </div>
     </div>
 
