@@ -254,6 +254,10 @@
         justify-content: center;
         text-align: center;
     }
+    .content h1{
+        font-size: 4rem;
+        
+    }
     .content button{
         margin-top: 100px;
     }
@@ -271,6 +275,7 @@
         width: 100%;
     }
     .bigtext{
+        /* font-size: 1rem; */
         width: 100%;
     }
     .bg-text{

@@ -245,6 +245,10 @@
         justify-content: center;
         text-align: center;
     }
+    .middleware{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .news{
         display: flex;
         flex-direction: column;
