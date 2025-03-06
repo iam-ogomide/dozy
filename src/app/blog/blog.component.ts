@@ -27,35 +27,101 @@ export class BlogComponent implements OnInit {
   articles: Article[] = [
     {
       category: 'Marketing',
-      title: '5 Ways to Overcome Your Fear of Public Speaking',
+      title: 'Tingo BV PLC',
       description: 'How do you create compelling presentations that wow your colleagues and impress...',
-      image: 'assets/images/marketing-speaker.jpg',
+      image: '../../assets/in1.jpg',
       author: {
         name: 'Leslie Alexander',
-        avatar: 'assets/images/leslie-alexander.jpg',
-        date: '20 Jan 2022'
+        avatar: '../../assets/in1.jpg',
+        date: '20 Jan 2025'
       }
     },
     {
       category: 'Business',
-      title: 'How to Give a Great TED Talk',
+      title: 'Equity Vaccines Ltd',
       description: 'TED Talks are known for being informative, engaging, and inspiring. If you\'re...',
-      image: 'assets/images/business-speaker.jpg',
+      image: '../../assets/bus1.jpg',
       author: {
         name: 'Kathryn Murphy',
-        avatar: 'assets/images/kathryn-murphy.jpg',
-        date: '20 Jan 2022'
+        avatar: '../../assets/in1.jpg',
+        date: '20 Jan 2025'
       }
     },
     {
-      category: 'Education',
-      title: 'How to Give a Great Graduation Speech',
+      category: 'Business',
+      title: 'Equity Clinics&Diagnostic Centre Ltd',
       description: 'Description: Keynote speeches are the highlight of any event. Here are some...',
-      image: 'assets/images/education-speaker.jpg',
+      image: '../../assets/bus2.jpg',
       author: {
         name: 'Annette Black',
-        avatar: 'assets/images/annette-black.jpg',
-        date: '20 Jan 2022'
+        avatar: '../../assets/in1.jpg',
+        date: '20 Jan 2025'
+      }
+    },
+    {
+      category: 'Business',
+      title: 'Equity Mining(Malawi)',
+      description: 'Description: Keynote speeches are the highlight of any event. Here are some...',
+      image: '../../assets/bus3.jpg',
+      author: {
+        name: 'Annette Black',
+        avatar: '../../assets/in1.jpg',
+        date: '20 Jan 2025'
+      }
+    },
+    {
+      category: 'Business',
+      title: 'Equity Pharmaceuticals Limited',
+      description: 'Description: Keynote speeches are the highlight of any event. Here are some...',
+      image: '../../assets/bus4.jpg',
+      author: {
+        name: 'Annette Black',
+        avatar: '../../assets/in1.jpg',
+        date: '20 Jan 2025'
+      }
+    },
+    {
+      category: 'Business',
+      title: 'Tingo Express Limited',
+      description: 'Description: Keynote speeches are the highlight of any event. Here are some...',
+      image: '../../assets/bus5.jpg',
+      author: {
+        name: 'Annette Black',
+        avatar: '../../assets/in1.jpg',
+        date: '20 Jan 2025'
+      }
+    },
+    {
+      category: 'Business',
+      title: 'Tingo Media&Technology Limited (Tingo AI)',
+      description: 'Description: Keynote speeches are the highlight of any event. Here are some...',
+      image: '../../assets/bus6.jpg',
+      author: {
+        name: 'Annette Black',
+        avatar: '../../assets/in1.jpg',
+        date: '20 Jan 2025'
+      }
+    },
+    {
+      category: 'Business',
+      title: 'Tingo Properties PLC',
+      description: 'Description: Keynote speeches are the highlight of any event. Here are some...',
+      image: '../../assets/bus1.jpg',
+      author: {
+        name: 'Annette Black',
+        avatar: '../../assets/in1.jpg',
+        date: '20 Jan 2025'
+      }
+    },
+    {
+      category: 'Business',
+      title: '1472 FC',
+      description: 'Description: Keynote speeches are the highlight of any event. Here are some...',
+      image: '../../assets/bus1.jpg',
+      author: {
+        name: 'Annette Black',
+        avatar: '../../assets/in1.jpg',
+        date: '20 Jan 2025'
       }
     }
   ];
