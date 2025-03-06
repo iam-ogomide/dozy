@@ -206,7 +206,7 @@
     top: 50%;
     left: 60%;
     color: white;
-    text-align: center;
+    text-align: start;
     /* font-size: 3rem; */
     font-weight: bold;
     transform: translateY(-50%);
