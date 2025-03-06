@@ -240,7 +240,7 @@
 
 @media screen and (max-width: 600px) {
     .content {
-        top: 20%;
+        top: 35%;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -256,6 +256,10 @@
     }
     .content-bottom{
         display: none;
+    }
+    .middleware{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .hometextcontainer{
         display: flex;
