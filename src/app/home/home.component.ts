@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
+
 
 interface NewsItem {
   title: string;
@@ -17,6 +19,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init({
+      // Offset from the original trigger point
+});
   }
 
   newsItems: NewsItem[] = [
