@@ -231,18 +231,14 @@
 
 
     <!-- Blog  -->
-    <div class="container">
+    <!-- <div class="container">
         <section class="blog-section">
-            <!-- <div class="circle-decoration circle-1"></div>
-            <div class="circle-decoration circle-2"></div> -->
+           
 
             <div class="blog-header" style="text-align: center;" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <h3 class="blog-title">Our Blog</h3>
                 <h2 class="display-6 fw-semibold mb-4">Explore recent works</h2>
-                <!-- <a href="#" class="view-more">
-                    View more blog
-                    <span class="arrow-icon">→</span>
-                </a> -->
+                
                 <div class="explore-btn" style="margin-top: 1.5rem;">
                     <a href="#" class="exp" routerLink="/blog">View More <i class="bi bi-caret-right"></i></a>
                 </div>
@@ -276,7 +272,23 @@
 
 
         </section>
+    </div> -->
+
+    <div class="container mt-5 mb-3">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-6 mb-5">Dive into some of Dozy's public Interviews.</h1>
+        </div>
+        <div class="slider-container">
+            <div class="slider" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+                <div class="slide" *ngFor="let video of videos">
+                    <iframe [src]="video" allowfullscreen></iframe>
+                </div>
+            </div>
+            <button class="prev" (click)="moveSlide(-1)">&#10094;</button>
+            <button class="next" (click)="moveSlide(1)">&#10095;</button>
+        </div>
     </div>
+    
 
 
 

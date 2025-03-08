@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 
 interface NewsItem {
@@ -16,7 +17,7 @@ interface NewsItem {
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+
 
   ngOnInit(): void {
     AOS.init({
@@ -61,5 +62,24 @@ export class HomeComponent implements OnInit {
     { name: 'National Associations', description: 'Our membership management software provides full automation of membership renewals and payments', green: '../../assets/im4.jpg' },
     { name: 'Clubs And Groups', description: 'Our membership management software provides full automation of membership renewals and payments', green: '../../assets/im8.jpg' },
   ];
+
+  currentIndex = 0;
+  videos: SafeResourceUrl[];
+
+  constructor(private sanitizer: DomSanitizer) {
+    this.videos = [
+      this.sanitizeUrl('https://www.youtube.com/embed/6UgU6DxoKok'),
+      this.sanitizeUrl('https://www.youtube.com/embed/Imk9ZUcdJcY')
+    ];
+  }
+
+  sanitizeUrl(url: string): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+
+  moveSlide(direction: number) {
+    const totalSlides = this.videos.length;
+    this.currentIndex = (this.currentIndex + direction + totalSlides) % totalSlides;
+  }
 
 }
