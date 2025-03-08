@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-
+import * as AOS from 'aos';
 interface Article {
   category: string;
   title: string;
@@ -21,8 +21,11 @@ export class VenturesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+ ngOnInit(): void {
+     AOS.init({
+       // Offset from the original trigger point
+ });
+   }
 
   articles: Article[] = [
     {
